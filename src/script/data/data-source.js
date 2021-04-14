@@ -1,6 +1,6 @@
 class DataSource {
     
-    searchClub(keyword) {
+    static searchClub(keyword) {
         const filteredClubs = clubs.filter(club => {
             return club.name.toUpperCase().includes(keyword.toUpperCase());
         });
