@@ -3,10 +3,13 @@ const main = () => {
     const buttonSearchElement = document.querySelector("#searchButtonElement");
     const clubListElement = document.querySelector("#clubList");
 
-    const onButtonSearchClicked = () => {
-        DataSource.searchClub(searchElement.value)
-            .then(renderResult)
-            .catch(fallbackResult)
+    const onButtonSearchClicked = async () => {
+        try{
+            const result = await DataSource.searchClub(searchElement.value);
+            renderResult(result)
+        } catch {
+            fallbackResult(message)
+        }
     };
 
     const renderResult = results => {
