@@ -1,7 +1,10 @@
-function DataSource(onSuccess, onFailed) {
-    this.onSuccess = onSuccess;
-    this.onFailed = onFailed;
+class DataSource(onSuccess, onFailed) {
+    constructor(onSuccess, onFailed){
+        this.onSuccess = onSuccess;
+        this.onFailed = onFailed;
+    }  
 }
+
 
 DataSource.prototype.searchClub = function(keyword) {
     const filteredClubs = clubs.filter(club => {
