@@ -10,7 +10,7 @@ const main = () => {
 
     const renderResult = results => {
         clubListElement.innerHTML = "";
-        results.forEach(club => {
+        results.forEach(function(club) {
             const { name, fanArt, description } = club;
 
             const clubElement = document.createElement("div");
