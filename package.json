@@ -1,11 +1,19 @@
 {
-    "name": "ClubFinder",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "ISC"
+  "name": "clubfinder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam Mukharil Bachtiar",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adammb86/ClubFinder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adammb86/ClubFinder/issues"
+  },
+  "homepage": "https://github.com/adammb86/ClubFinder#readme",
+  "description": ""
 }
